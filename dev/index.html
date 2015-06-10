@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <title>Grafa</title>
+        <meta name="viewport" content="width=device-width">
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <meta name="author" content="Cedced19">
+        <meta name="twitter:cars" content="summary">
+        <meta name="twitter:title" content="Cedced19">
+        <meta name="twitter:image" content="http://cedced19.github.io/profile.png">
+        <meta name="twitter:site" content="@cedced19">
+        <meta name="twitter:author" content="@cedced19">
+        <meta name="author" content="Cedced19">
+        <meta name="description" content="A application to display functions.">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="http://cedced19.github.io/profile.png">
+        <meta property="og:language" content="en_US">
+        <meta property="og:url" content="cedced19.github.io/condolence-cards/">
+        <!-- build:css styles/styles.css -->
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/print.css">
+        <!-- endbuild -->
+    </head>
+    <body ng-app="Grafa" ng-controller="GrafaCtrl">
+
+        <header>
+            <h1 class="animate">Grafa</h1>
+            <p class="animate">A application to display functions.</p>
+        </header>
+        <main class="animate">
+            <p>This application use <a href="http://maurizzzio.github.io/function-plot/">function-plot</a>.</p>
+            <h3>Options:</h3>
+            <textarea ng-model="options" spellcheck="false"></textarea> 
+            <a class="btn" ng-click="display()">Calcul</a>
+            <h3>Result:</h3>
+            <div class="result"></div>
+            <a class="btn" ng-click="print()">Print</a>
+        </main>
+        <footer class="animate">
+            <hr>
+            <p>Cedced19 - <a href="http://cedced19.github.io/license/">MIT</a></p>
+        </footer>
+
+        <div class="forkme">
+            <a href="https://github.com/cedced19/grafa">Fork me on Github</a>
+        </div>
+
+        <!-- build:js scripts/scripts.js -->
+        <script type="text/javascript" src="scripts/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/angular-cookies.min.js"></script>
+        <script type="text/javascript" src="scripts/d3.min.js"></script>
+        <script type="text/javascript" src="scripts/function-plot.js"></script>
+        <script type="text/javascript" src="scripts/app.js"></script>
+        <!-- endbuild -->
+    </body>
+</html>
