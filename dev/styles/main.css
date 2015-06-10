@@ -117,22 +117,8 @@
         padding: 2em;
         max-width: 40em;
     }
-    main textarea {
-        color: #888;
-        width: 100%;
-        max-width: 100%;
-        padding: 0px 0px 0px 0px;
-        border: 1px solid;
-        background: #FFF;
-        outline: 0;
-        font: 200 12px/25px Arial, Helvetica, sans-serif;
-        height: 30px;
-        line-height:15px;
-        margin: 2px 6px 16px 0px;
-        margin: 0px auto;
-        margin-bottom: 6px;
-        resize: none;
-        height: 300px;
+    main .ace_editor  {
+      height : 300px;
     }
     main .btn {
         text-transform: uppercase;

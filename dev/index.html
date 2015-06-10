@@ -29,9 +29,9 @@
             <p class="animate">A application to display functions.</p>
         </header>
         <main class="animate">
-            <p>This application use <a href="http://maurizzzio.github.io/function-plot/">function-plot</a>.</p>
+            <p>This application use <a href="http://maurizzzio.github.io/function-plot/">function-plot</a>. The syntax of the options is JSON.</p>
             <h3>Options:</h3>
-            <textarea ng-model="options" spellcheck="false"></textarea> 
+            <div ui-ace="{useWrapMode: true, showGutter: false}" ng-model="options" spellcheck="false"></div>
             <a class="btn" ng-click="display()">Calcul</a>
             <h3>Result:</h3>
             <div class="result"></div>
@@ -47,7 +47,9 @@
         </div>
 
         <!-- build:js scripts/scripts.js -->
+        <script type="text/javascript" src="scripts/ace.js"></script>
         <script type="text/javascript" src="scripts/angular.min.js"></script>
+        <script type="text/javascript" src="scripts/ui-ace.js"></script>
         <script type="text/javascript" src="scripts/angular-cookies.min.js"></script>
         <script type="text/javascript" src="scripts/d3.min.js"></script>
         <script type="text/javascript" src="scripts/function-plot.js"></script>

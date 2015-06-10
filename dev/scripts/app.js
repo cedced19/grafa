@@ -1,7 +1,7 @@
-angular.module('Grafa', ['ngCookies'])
+angular.module('Grafa', ['ngCookies', 'ui.ace'])
 .controller('GrafaCtrl', ['$scope', '$http', '$cookieStore', function($scope, $http, $cookieStore) {
     $http.get('options.json').success(function (data) {
-        $scope.options = JSON.stringify(data, null, 7);
+        $scope.options = JSON.stringify(data, null, 6);
     
         $scope.display = function () {
            $cookieStore.put('options', $scope.options);
