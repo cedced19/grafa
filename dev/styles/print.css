@@ -1,12 +1,12 @@
 @media print {
-    *{
+    * {
         box-sizing:border-box;
     }
     html, body {
         font-family:sans-serif;
         height: 100%;
     }
-    header, footer, h3, a, textarea, .forkme, .top-right-legend {
+    header, footer, h3, a, textarea, .forkme, .top-right-legend, p {
         display: none;
     }
 }

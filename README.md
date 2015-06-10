@@ -4,7 +4,7 @@ A application to display functions
 
 [![Demo](demo.png)](http://cedced19.github.io/grafa/)
 
-This application use
+This application use [function-plot](http://maurizzzio.github.io/function-plot/).
 
 To compile:
 ```bash
